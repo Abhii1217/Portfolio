@@ -1,0 +1,20 @@
+# Dependencies — downloaded automatically, never commit these
+node_modules/
+
+# Build output — generated automatically by `npm run build`
+dist/
+
+# Environment variables — may contain secrets
+.env
+.env.local
+.env.*.local
+
+# Vite cache
+.vite/
+
+# Mac system files
+.DS_Store
+
+# Editor folders
+.vscode/
+.idea/
