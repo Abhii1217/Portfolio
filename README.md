@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built with React and Vite — showcasing my skills, projects, education, and certifications.
 
-🔗 **Live Demo:** [https://portfolio-xi-three-7gaao1yh7p.vercel.app/](https://portfolio-xi-three-7gaao1yh7p.vercel.app/)
+🔗 **Live Demo:** [https://abhii1217.vercel.app/](https://abhii1217.vercel.app/)
 
 ---
 
