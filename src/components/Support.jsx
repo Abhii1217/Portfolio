@@ -5,7 +5,7 @@ export default function Support() {
   return (
     <Section id="support">
       <div className="rounded-xl border border-[#1f1f1f] bg-[#111111] p-8">
-        <p className="text-xs font-mono text-[#3a3a3a] uppercase tracking-[0.15em] mb-4">
+        <p className="text-xs font-mono text-[#6b6b6b] uppercase tracking-[0.15em] mb-4">
           Lets work together
         </p>
 
