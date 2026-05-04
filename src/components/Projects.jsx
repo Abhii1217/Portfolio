@@ -94,7 +94,7 @@ function ProjectCard({ project }) {
             <p className="text-xs text-[#4a4a4a] mt-0.5">{project.date}</p>
 
           {project.description && (
-            <p className="text-xs text-[#5a5a5a] mt-2 leading-relaxed">
+            <p className="text-xs text-[#9a9a9a] mt-2 leading-relaxed">
             {project.description}
             </p>
           )}
@@ -146,8 +146,8 @@ function ProjectCard({ project }) {
           {project.details && project.details.length > 0 && (
             <ul className="mt-1 space-y-1.5 flex-1 overflow-hidden">
               {project.details.map((point, i) => (
-                <li key={i} className="flex items-start gap-2 text-xs text-[#5a5a5a]">
-                  <span className="mt-1 w-1 h-1 rounded-full bg-red-500 flex-shrink-0" />
+                <li key={i} className="flex items-center gap-2 text-xs text-[#5a5a5a]">
+                  <span className="w-1 h-1 rounded-full bg-red-500 flex-shrink-0 self-start mt-[0.35rem]" />
                   <span className="leading-relaxed">{point}</span>
                 </li>
               ))}
