@@ -54,12 +54,16 @@ function MagneticText({ children, className, shadowClassName, maxMove = 18 }) {
 function LetterHover({ text }) {
   return (
     <span className="flex flex-wrap">
-      {text.split('').map((char, i) => (
-        <span
-          key={i}
-          className="transition-colors duration-150 hover:text-red-500 cursor-default"
-        >
-          {char === ' ' ? '\u00A0' : char}
+      {text.split(' ').map((word, wi) => (
+        <span key={wi} className="flex whitespace-nowrap mr-[0.25em]">
+          {word.split('').map((char, i) => (
+            <span
+              key={i}
+              className="transition-colors duration-150 hover:text-red-500 cursor-default"
+            >
+              {char}
+            </span>
+          ))}
         </span>
       ))}
     </span>
