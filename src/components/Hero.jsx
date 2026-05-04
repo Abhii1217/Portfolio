@@ -2,15 +2,15 @@ import { useRef } from 'react'
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
 import Button from './ui/Button'
 
-function MagneticText({ children, className, shadowClassName, maxMove = 6 }) {
+function MagneticText({ children, className, shadowClassName, maxMove = 18 }) {
   const ref = useRef(null)
   const rawX = useMotionValue(0)
   const rawY = useMotionValue(0)
-  const springConfig = { stiffness: 300, damping: 20, mass: 0.5 }
+  const springConfig = { stiffness: 180, damping: 10, mass: 1.2 }
   const x = useSpring(rawX, springConfig)
   const y = useSpring(rawY, springConfig)
-  const shadowX = useTransform(x, (v) => v * 0.4)
-  const shadowY = useTransform(y, (v) => v * 0.4)
+  const shadowX = useTransform(x, (v) => v * 0.6)
+  const shadowY = useTransform(y, (v) => v * 0.6)
 
   const handleMouseMove = (e) => {
     const el = ref.current
@@ -83,7 +83,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-3 tracking-tight overflow-visible">
-            <MagneticText maxMove={6} shadowClassName="text-[#2a2a2a] blur-[1px]">
+            <MagneticText maxMove={14} shadowClassName="text-[#2a2a2a] blur-[1px]">
               Hi, I'm <span className="text-red-500">Abhishek</span>
             </MagneticText>
           </h1>
