@@ -57,7 +57,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-[#0f0f0f]/90 backdrop-blur-sm border-b border-[#1a1a1a]">
-      <nav className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+      <nav className="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between gap-2">
 
         <a
           href="#"
@@ -66,7 +66,7 @@ export default function Navbar() {
           Abhishek Anand
         </a>
 
-        <ul className="flex items-center gap-3 sm:gap-6">
+        <ul className="flex items-center gap-2 sm:gap-6">
           {links.map((link) => (
             <li key={link.label}>
               <a
