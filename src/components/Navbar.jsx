@@ -61,17 +61,17 @@ export default function Navbar() {
 
         <a
           href="#"
-          className="font-mono text-sm text-[#6b6b6b] hover:text-[#e2e2e2] transition-colors duration-200"
+          className="font-mono text-xs sm:text-sm text-[#6b6b6b] hover:text-[#e2e2e2] transition-colors duration-200 whitespace-nowrap"
         >
           Abhishek Anand
         </a>
 
-        <ul className="flex items-center gap-6">
+        <ul className="flex items-center gap-3 sm:gap-6">
           {links.map((link) => (
             <li key={link.label}>
               <a
                 href={link.href}
-                className="text-sm text-[#6b6b6b] hover:text-[#e2e2e2] transition-colors duration-200"
+                className="text-xs sm:text-sm text-[#6b6b6b] hover:text-[#e2e2e2] transition-colors duration-200"
               >
                 {link.label}
               </a>
@@ -83,7 +83,7 @@ export default function Navbar() {
               onClick={() => setOpen((prev) => !prev)}
               aria-expanded={open}
               aria-haspopup="true"
-              className="text-sm px-3 py-1.5 rounded-md border border-[#2a2a2a] text-[#e2e2e2] hover:bg-[#1a1a1a] transition-colors duration-200 cursor-pointer"
+              className="text-xs sm:text-sm px-2 sm:px-3 py-1.5 rounded-md border border-[#2a2a2a] text-[#e2e2e2] hover:bg-[#1a1a1a] transition-colors duration-200 cursor-pointer"
             >
               Contact
             </button>
